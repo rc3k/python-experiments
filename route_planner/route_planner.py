@@ -24,7 +24,6 @@ def route_exists(from_row, from_column, to_row, to_column, map_matrix):
         if any([p == (to_row, to_column) for p in positions]):
             return True
         already_seen |= set(positions)
-
     return False
 
 
